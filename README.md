@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Docker used for development:
 
 `docker build -t test-image .`
+
 `docker run --name test-container -d -p 4200:4200 -v $(pwd)/src:/app/src test-image`
 
 To check Docker logs:
