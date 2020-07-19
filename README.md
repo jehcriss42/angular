@@ -6,11 +6,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Docker used for development:
 
 `docker build -t test-image .`
+<<<<<<< HEAD
 `docker run --name test-container -d -p 4200:4200 -v $(pwd)/src:/app/src test-image`
 
 To check Docker logs:
 `docker logs test-container -f`
 
+=======
+
+`docker run --name test-container -d -p 4200:4200 -v $(pwd)/src:/app/src test-image`
+
+To check Docker logs:
+`docker logs test-container -f`
+
+>>>>>>> 2add89640db12f5cad2ad7e42c43fc95be9f7be4
 ## Development server
 
 To run locally: run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
