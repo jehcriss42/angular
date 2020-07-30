@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core'
 import { IProduct } from './product';
-import { runInThisContext } from 'vm';
-import { registerLocaleData } from '@angular/common';
 
 @Component({
     selector: 'pm-products',
