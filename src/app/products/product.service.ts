@@ -8,6 +8,9 @@ import { catchError, tap } from 'rxjs/operators'
     providedIn: 'root'
 })
 export class ProductService {
+    getProduct(id: number) {
+      throw new Error("Method not implemented.");
+    }
 
     private productUrl = 'api/products/products.json'
 
