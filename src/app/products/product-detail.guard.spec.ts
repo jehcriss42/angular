@@ -1,16 +1,15 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, async, inject } from '@angular/core/testing';
 
 import { ProductDetailGuard } from './product-detail.guard';
 
 describe('ProductDetailGuard', () => {
-  let guard: ProductDetailGuard;
-
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    guard = TestBed.inject(ProductDetailGuard);
+    TestBed.configureTestingModule({
+      providers: [ProductDetailGuard]
+    });
   });
 
-  it('should be created', () => {
+  it('should ...', inject([ProductDetailGuard], (guard: ProductDetailGuard) => {
     expect(guard).toBeTruthy();
-  });
+  }));
 });
